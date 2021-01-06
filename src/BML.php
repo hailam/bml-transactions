@@ -19,7 +19,7 @@ class BML
      *
      * @param string $username
      * @param string $password
-     * @param int	$account
+     * @param int    $account
      *
      * Note: $account is account index from dashboard
      *
@@ -76,20 +76,21 @@ class BML
     }
 
     /**
-     * Get Accounts
+     * Get Accounts.
      *
      * @return array
      */
-     public function GetAccounts(): array
-     {
+    public function GetAccounts(): array
+    {
         $response = $this->client->GetRequest('dashboard');
+
         return $response['dashboard'];
-     }
+    }
 
     /**
      * SetUserID.
      *
-     * @param integer $account
+     * @param int $account
      *
      * @return void
      */
